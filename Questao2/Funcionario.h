@@ -14,15 +14,15 @@ class Funcionario
 
     public:
         Funcionario();
-        Funcionario(string, string, float);
+        Funcionario(string, string, double);
 
         void setMatricula(string);
         void setNome(string);
-        void setSalario(float);
+        void setSalario(double);
 
         string getMatricula();
         string getNome();
-        virtual float getSalario();
+        double virtual getSalario();
 
 };
 

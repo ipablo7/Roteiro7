@@ -6,9 +6,10 @@
 class Consultor: public Funcionario
 {
     public:
-        float getSalario();
-        float getSalario(float);
-
+        Consultor();
+        Consultor(string,string,double,double);
+        double getSalario();
+        double getSalario(double);
 };
 
 #endif

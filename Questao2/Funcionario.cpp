@@ -5,7 +5,7 @@ Funcionario::Funcionario()
 
 }
 
-Funcionario::Funcionario(string matricula, string nome, float salario)
+Funcionario::Funcionario(string matricula, string nome, double salario)
 {
     setMatricula(matricula);
     setNome(nome);
@@ -22,7 +22,7 @@ void Funcionario::setNome(string nome)
     this -> nome = nome;
 }
 
-void Funcionario::setSalario(float salario)
+void Funcionario::setSalario(double salario)
 {
     this -> salario = salario;
 }
@@ -36,7 +36,7 @@ string Funcionario::getNome()
     return nome;
 }
 
-float Funcionario::getSalario()
+double Funcionario::getSalario()
 {
     return salario;
 }
