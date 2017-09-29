@@ -15,9 +15,5 @@ string FiguraGeometrica::getNome()
     return nome;
 }
 
-double calcularArea()
-{
-
-}
 
 
