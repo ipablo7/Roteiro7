@@ -10,18 +10,59 @@ using namespace std;
 int main()
 {
 
-    int bas, alt, raio;
-    string nom;
-    FiguraGeometrica fg1;
+    int opcao;
+    float aux, aux2;
 
-    cout << "Informe o nome da figura: ";
-    cin >> nom;
+    Quadrado *quadrado = new Quadrado;
+    Circulo *circulo = new Circulo;
+    Triangulo *triangulo = new Triangulo;
 
-    if(nom.compare("Triangulo")){
-        cout << "AAAAAAAAAAAAAAAAAA";
+    cout << endl << "Informe a opcao da figura geometrica a ser escolhida: " << endl;
+    cout << "1 - \tQUADRADO" << endl;
+    cout << "2 - \tCIRCULO" << endl;
+    cout << "3 - \tTRIANGULO" << endl;
+    cout << "4 - \t SAIR" << endl;
+    cin >> opcao;
+
+    switch(opcao)
+    {
+        case 1:
+            cout << "Informe o lado: ";
+            cin >> aux;
+            quadrado->setLado(aux);
+
+            quadrado->setNome("Quadrado");
+
+            cout << "Area do " << quadrado->getNome() << " eh = " << quadrado->calcularArea();
+            break;
+
+        case 2:
+            cout << "Informe o raio: ";
+            cin >> aux;
+            quadrado->setLado(aux);
+
+            quadrado->setNome("Circulo");
+
+            cout << "Area do " << circulo->getNome() << " eh = " << circulo->calcularArea();
+            break;
+
+        case 3:
+            cout << "Informe o base: ";
+            cin >> aux;
+            triangulo->setBase(aux);
+
+            cout << "Informe a altura: ";
+            cin >> aux2;
+            triangulo->setAltura(aux2);
+
+            circulo->setNome("Triangulo");
+            cout << "Area do " << triangulo->getNome() << " eh = " << triangulo->calcularArea();
+            break;
+
+        case 4:
+            break;
+
     }
-
-
 
 
 

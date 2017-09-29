@@ -9,11 +9,11 @@ class Circulo: public FiguraGeometrica
 
     public:
         Circulo();
+        Circulo(double);
 
-        virtual ~Circulo();
-        float calcularArea();
-        void setRaio(float);
-
+        double getRaio();
+        void setRaio(double);
+        double calcularArea();
 
 };
 

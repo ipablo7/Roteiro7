@@ -5,9 +5,9 @@ FiguraGeometrica::FiguraGeometrica()
 
 }
 
-void FiguraGeometrica::setNome(string n)
+void FiguraGeometrica::setNome(string nome)
 {
-    nome = n;
+    this -> nome = nome;
 }
 
 string FiguraGeometrica::getNome()
@@ -15,7 +15,7 @@ string FiguraGeometrica::getNome()
     return nome;
 }
 
-float calcularArea()
+double calcularArea()
 {
 
 }

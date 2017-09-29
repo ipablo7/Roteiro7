@@ -5,22 +5,27 @@ Triangulo::Triangulo() : FiguraGeometrica()
 
 }
 
-float Triangulo::calcularArea()
-{
-    return base*altura;
-}
-
-void Triangulo::setBase(float base)
+void Triangulo::setBase(double base)
 {
     this -> base = base;
 }
 
-void Triangulo::setAltura(float altura)
+void Triangulo::setAltura(double altura)
 {
     this -> altura = altura;
 }
 
-Triangulo::~Triangulo()
+double Triangulo::getAltura()
 {
+    return altura;
+}
 
+double Triangulo::getBase()
+{
+    return base;
+}
+
+double Triangulo::calcularArea()
+{
+    return (base*altura) / 2;
 }

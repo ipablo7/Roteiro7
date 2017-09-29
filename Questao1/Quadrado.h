@@ -5,16 +5,17 @@
 class Quadrado: public FiguraGeometrica
 {
     private:
-        float base, altura;
+       double lado;
 
     public:
 
         Quadrado();
+        Quadrado(double);
 
-        virtual ~Quadrado();
-        float calcularArea();
-        void setBase(float);
-        void setAltura(float);
+        void setLado(double);
+        double getLado();
+        double calcularArea();
+
 };
 
 #endif

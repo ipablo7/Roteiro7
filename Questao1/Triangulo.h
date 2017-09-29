@@ -6,16 +6,17 @@ class Triangulo: public FiguraGeometrica
 {
     private:
 
-        float base, altura;
+        double base, altura;
     public:
 
         Triangulo();
+        Triangulo(double,double);
 
-        virtual ~Triangulo();
-
-        float calcularArea();
-        void setBase(float);
-        void setAltura(float);
+        void setBase(double);
+        void setAltura(double);
+        double getBase();
+        double getAltura();
+        double calcularArea();
 };
 
 #endif

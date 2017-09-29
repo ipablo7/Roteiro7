@@ -1,21 +1,26 @@
 #include "Circulo.h"
 
-Circulo::Circulo() : FiguraGeometrica()
+Circulo::Circulo()
 {
 
 }
 
-float Circulo::calcularArea()
+Circulo::Circulo(double raio)
 {
-    return PI*raio*raio;
+    setRaio(raio);
 }
 
-void Circulo::setRaio(float raio)
+void Circulo::setRaio(double raio)
 {
     this -> raio = raio;
 }
 
-Circulo::~Circulo()
+double Circulo::getRaio()
 {
+    return raio;
+}
 
+double Circulo::calcularArea()
+{
+    return PI*raio*raio;
 }

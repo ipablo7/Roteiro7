@@ -1,26 +1,27 @@
 #include "Quadrado.h"
 
-Quadrado::Quadrado() : FiguraGeometrica()
+Quadrado::Quadrado()
 {
 
 }
 
-float Quadrado::calcularArea()
+Quadrado::Quadrado(double lado)
 {
-    return base*altura;
+    setLado(lado);
 }
 
-void Quadrado::setBase(float base)
+void Quadrado::setLado(double lado)
 {
-    this -> base = base;
+    this -> lado = lado;
 }
 
-void Quadrado::setAltura(float altura)
+double Quadrado::getLado()
 {
-    this -> altura = altura;
+    return lado;
 }
 
-Quadrado::~Quadrado()
+double Quadrado::calcularArea()
 {
-
+    return lado*lado;
 }
+

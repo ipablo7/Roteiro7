@@ -15,7 +15,7 @@ class FiguraGeometrica
 
         void setNome(string);
         string getNome();
-        virtual float calcularArea();
+        virtual double calcularArea();
 };
 
 #endif
