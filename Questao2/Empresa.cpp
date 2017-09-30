@@ -47,16 +47,20 @@ void Empresa::setConsultor()
 
 void Empresa::mostrarSalario()
 {
+
     double percent;
 
     percent = 0.0;
 
     cout << "Informe o valor do percentual a ser acrescido: ";
     cin >> percent;
-    cout << "Salario com um aumento de " << percent << "% " << "eh = " << consult.getSalario(percent);
-    cout << endl;
+    consult.setSalario(percent);
 
-    cout << "Salario com um aumento de 10% = " << consult.getSalario(percent);
-    consult.getSalario();
+    if(percent <= 0)
+        cout << "\nSalario com um aumento de 10% = " << consult.getSalario();
+    else
+        cout << "\nSalario com um aumento de " << percent << "% " << "eh = " << consult.getSalario(percent) << endl;
+
+
 
 }

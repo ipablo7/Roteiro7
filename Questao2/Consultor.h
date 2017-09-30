@@ -8,8 +8,10 @@ class Consultor: public Funcionario
     public:
         Consultor();
         Consultor(string,string,double,double);
+
         double getSalario();
         double getSalario(double);
+
 };
 
 #endif
