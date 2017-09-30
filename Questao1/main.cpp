@@ -43,7 +43,7 @@ int main()
                 cin >> aux;
                 circulo->setRaio(aux);
 
-                quadrado->setNome("Circulo");
+                circulo->setNome("Circulo");
 
                 cout << "Area do " << circulo->getNome() << " eh = " << circulo->calcularArea() << endl;
                 break;
@@ -57,7 +57,7 @@ int main()
                 cin >> aux2;
                 triangulo->setAltura(aux2);
 
-                circulo->setNome("Triangulo");
+                triangulo->setNome("Triangulo");
                 cout << "Area do " << triangulo->getNome() << " eh = " << triangulo->calcularArea() << endl;
                 break;
 
