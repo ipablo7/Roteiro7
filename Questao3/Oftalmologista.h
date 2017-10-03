@@ -1,6 +1,8 @@
 #ifndef OFTALMOLOGISTA_H
 #define OFTALMOLOGISTA_H
+#include "Medico.h"
 
+using namespace std;
 
 class Oftalmologista : public Medico
 {
@@ -8,9 +10,10 @@ class Oftalmologista : public Medico
         Oftalmologista();
         virtual ~Oftalmologista();
         void setEspecializacao(string);
-        string getEspecializacao;
+        string getEspecializacao();
         void fazTrabalho();
     private:
+        string especializacao;
 };
 
 #endif // OFTALMOLOGISTA_H

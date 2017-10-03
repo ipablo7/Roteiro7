@@ -5,11 +5,16 @@
 #include "Ginecologista.h"
 #include "Oftalmologista.h"
 #include "Otorrino.h"
+#include "Hospital.h"
+
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Hospital hosp;
+
+    hosp.exibeMedicos();
+
     return 0;
 }

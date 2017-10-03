@@ -1,6 +1,8 @@
 #ifndef CIRURGIAO_H
 #define CIRURGIAO_H
+#include "Medico.h"
 
+using namespace std;
 
 class Cirurgiao : public Medico
 {
@@ -8,7 +10,7 @@ class Cirurgiao : public Medico
         Cirurgiao();
         virtual ~Cirurgiao();
         void setEspecializacao(string);
-        string getEspecializacao;
+        string getEspecializacao();
         void fazTrabalho();
     private:
         string especializacao;
