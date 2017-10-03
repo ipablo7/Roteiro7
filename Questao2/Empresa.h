@@ -14,7 +14,6 @@ class Empresa
 
     public:
         Empresa();
-        Empresa(Funcionario, Consultor);
 
         void setFuncionario();
         void setConsultor();

@@ -17,11 +17,11 @@ int main()
     cin >> nome;
     trabalhadorAss.setNome(nome);
 
-    cout << "Informe o salario bruto do trabalhador assalariado: ";
+    cout << "Informe o salario mensal do trabalhador assalariado: ";
     cin >> sal;
     trabalhadorAss.setSalario(sal);
 
-    cout << "O salario liquido de " << trabalhadorAss.getNome() << " eh = " << trabalhadorAss.calcularPagamento();
+    cout << "O salario semanal de " << trabalhadorAss.getNome() << " eh = " << trabalhadorAss.calcularPagamento();
     cout << endl << endl;
 
     //******************************************************
@@ -30,14 +30,14 @@ int main()
     cin >> nome;
     trabalhadorhora.setNome(nome);
 
-    cout << "Informe o salario bruto do trabalhador assalariado: ";
+    cout << "Informe o salario mensal do trabalhador assalariado: ";
     cin >> sal;
     trabalhadorhora.setSalario(sal);
 
     cout << "Informe o numero de horas que trabalhou: ";
     cin >> hora;
 
-    cout << "O salario liquido de " << trabalhadorhora.getNome() << " eh = " << trabalhadorhora.calcularPagamento(hora);
+    cout << "O salario semanl de " << trabalhadorhora.getNome() << " eh = " << trabalhadorhora.calcularPagamento(hora);
     cout << endl << endl;
 
     return 0;

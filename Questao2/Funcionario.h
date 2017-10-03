@@ -22,7 +22,7 @@ class Funcionario
 
         string getMatricula();
         string getNome();
-        double virtual getSalario();
+        double getSalario();
 
 };
 

@@ -7,7 +7,7 @@ Empresa::Empresa()
 
 void Empresa::setFuncionario()
 {
-    static double sal;
+    double sal;
     string name, matric;
 
     cout << "**** FUNCIONARIO ****" << endl;
@@ -54,12 +54,11 @@ void Empresa::mostrarSalario()
 
     cout << "Informe o valor do percentual a ser acrescido: ";
     cin >> percent;
-    consult.setSalario(percent);
 
-    if(percent <= 0)
-        cout << "\nSalario com um aumento de 10% = " << consult.getSalario();
-    else
-        cout << "\nSalario com um aumento de " << percent << "% " << "eh = " << consult.getSalario(percent) << endl;
+
+    cout << "\nSalario com um aumento de 10% = " << consult.getSalario() << endl;
+
+    cout << "\nSalario com um aumento de " << percent << "% " << "eh = " << consult.getSalario(percent) << endl;
 
 
 
